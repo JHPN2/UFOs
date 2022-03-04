@@ -15,16 +15,16 @@
     <!-- Adding link to style sheet CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <div class="wrapper">
         <!-- Adding the Navbar -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         
         <!-- Adding the jumbotron -->
         <div class="jumbotron">
-            <h1>The Truth Is Out There</h1>
+            <h1 class="display-4">The Truth Is Out There</h1>
         </div>
 
         <!-- The grid system, consisting of containers, rows, and columns, will 
@@ -48,11 +48,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <form>
+                    <form class="bg-dark">
                         <p>Filter Search</p>
                     </form>
-                    <ul class="list-group">
-                        <li class="list-group-item">
+                    <ul class="list-group bg-dark">
+                        <li class="list-group-item bg-dark">
                             <label for="date">Enter Date</label>
                             <input type="text" placeholder="1/10/2010" id="datetime"/>
                             <!-- 1) The type="text" means that the code will look for text to be input.
@@ -61,8 +61,8 @@
                                  3) The id="datetime" is what our JavaScript code will look for when the 
                                     button is clicked and the function is executed.-->
                         </li>
-                        <li class="list-group-item">
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                        <li class="list-group-item bg-dark">
+                            <button id="filter-btn" type="button"  class="btn btn-dark">Filter Table</button>
                             <!-- When the button is clicked, the input from earlier is picked up by our
                                  JavaScript code and then applied to the filter.
 
@@ -74,7 +74,7 @@
                                  to help keep the element neat and tidy. Finally, we've named our button 
                                  "Filter Table," by nesting it between the opening and closing button tags. -->
                         </li>
-                    </ul>>
+                    </ul>
 
                 </div>
                 <div class="col-md-9">
@@ -96,7 +96,13 @@
             </div>            
         </div>
 
-    </div>    
+    </div>
+
+    <!-- Adding script tags to connect the JS to this HTML.
+        *Important Note: The ORDER of the scripts MATTERS!!! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>        
 </body>
 </html>
 
