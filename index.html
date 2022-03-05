@@ -48,7 +48,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <form class="bg-dark">
+                    <form class="bg-dark" action="">
                         <p>Filter Search</p>
                     </form>
                     <ul class="list-group bg-dark">
@@ -61,19 +61,27 @@
                                  3) The id="datetime" is what our JavaScript code will look for when the 
                                     button is clicked and the function is executed.-->
                         </li>
+
                         <li class="list-group-item bg-dark">
-                            <button id="filter-btn" type="button"  class="btn btn-dark">Filter Table</button>
-                            <!-- When the button is clicked, the input from earlier is picked up by our
-                                 JavaScript code and then applied to the filter.
-
-                                 type="button" tells the browser that, by default, the button does nothing.
-                                 However, our custom JavaScript script will overwrite the default behavior—as 
-                                 if the button is waiting for instruction.
-
-                                 The class="btn btn-default" attribute adds some Bootstrap styling to the mix 
-                                 to help keep the element neat and tidy. Finally, we've named our button 
-                                 "Filter Table," by nesting it between the opening and closing button tags. -->
+                            <label for="City">Enter a City</label>
+                            <input type="text" placeholder="Example: san diego" id="city" class="form-control"/> <!-- id = "city" is CASE-SENSITIVE!!! -->
                         </li>
+
+                        <li class="list-group-item bg-dark">
+                            <label for="State">Enter a State</label>
+                            <input type="text" placeholder="Example: ca" id="state" class="form-control"/>
+                        </li>
+
+                        <li class="list-group-item bg-dark">
+                            <label for="Country">Enter a Country</label>
+                            <input type="text" placeholder="Example: us" id="country" class="form-control"/>
+                        </li>
+
+                        <li class="list-group-item bg-dark">
+                            <label for="Shape">Enter a Shape</label>
+                            <input type="text" placeholder="Example: sphere" id="shape" class="form-control"/>
+                        </li>
+
                     </ul>
 
                 </div>
