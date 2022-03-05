@@ -9,17 +9,25 @@ The purpose of this project is to build a webpage to visualize UFO data stored i
 Use the following steps to search for desired UFO criteria:
 * Load the webpage using your favorite browser.
 
+![Webpage](static/images/UFO_Main_Page_1.png "Figure 1")
+
 * Once loaded, take some time to view the information given and locate the “Filter Search” section of the webpage.
 
 * Under the “Filter Search” section, there are multiple input fields that will automatically filter down the data table to the desired search criteria.
+
+![Filter](static/images/UFO_Filter.png "Figure 2")
 
 * To perform a filter search begin by typing the required criteria as noted on any of the input fields. For example, query “san diego” within the “City” field.
 
 * Once a query has be typed, press “enter” or “return” on your keyboard and the table should present the request filtered data. In our example, all data regarding the City “san diego” has be returned.
 
+![City](static/images/UFO_City_Search.png "Figure 3")
+
 * More filters can be applied. Let’s type an additional query “sphere” under the “Shape” field.
 
 * Pressing enter or return, the data is once again filtered and the data for both “san diego” and “sphere” are returned.
+
+![Shape](static/images/UFO_Shape_Search.png "Figure 4")
 
 
 ### Summary
